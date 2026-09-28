@@ -37,7 +37,9 @@ const particles = Array.from({ length: PARTICLE_COUNT }, (_, i) => {
   };
 });
 
-export const Scene2LogoReveal: React.FC = () => {
+export const Scene2LogoReveal: React.FC<{ logoSrc?: string }> = ({
+  logoSrc = "madar-logo-transparent.png",
+}) => {
   const frame = useCurrentFrame();
   const scale = useResponsiveScale();
 
@@ -104,7 +106,7 @@ export const Scene2LogoReveal: React.FC = () => {
             }}
           >
             <Img
-              src={staticFile("madar-logo-transparent.png")}
+              src={staticFile(logoSrc)}
               style={{ width: "100%", height: "100%", objectFit: "contain" }}
             />
           </div>

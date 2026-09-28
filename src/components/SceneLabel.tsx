@@ -2,7 +2,7 @@ import React from "react";
 import { interpolate, useCurrentFrame, Easing } from "remotion";
 import { colors, EASE_OUT } from "../theme";
 import { arabicFont, latinFont } from "../fonts";
-import { useResponsiveScale } from "../hooks";
+import { useTextScale } from "../hooks";
 
 const easeOut = Easing.bezier(...EASE_OUT);
 
@@ -26,7 +26,7 @@ export const SceneLabel: React.FC<{
   weight = 600,
 }) => {
   const frame = useCurrentFrame();
-  const scale = useResponsiveScale();
+  const scale = useTextScale();
   const t = Math.max(0, frame - delay);
   const opacity = interpolate(t, [0, 18], [0, 1], {
     extrapolateLeft: "clamp",

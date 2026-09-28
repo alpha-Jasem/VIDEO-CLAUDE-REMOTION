@@ -6,3 +6,9 @@ export const useResponsiveScale = () => {
   const { height } = useVideoConfig();
   return height / 720;
 };
+
+// Captions must fit the frame's narrow side, otherwise they overflow in 9:16.
+export const useTextScale = () => {
+  const { width, height } = useVideoConfig();
+  return Math.min(width, height) / 720;
+};
