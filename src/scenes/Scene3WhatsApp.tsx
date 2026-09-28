@@ -121,7 +121,7 @@ export const Scene3WhatsApp: React.FC = () => {
             }}
           >
             <Img
-              src={staticFile("madar-logo-transparent.png")}
+              src={staticFile("madar-mark.png")}
               style={{ width: 20, height: 20, objectFit: "contain" }}
             />
             <span style={{ color: "#e8ebf1", fontSize: 11.5, fontWeight: 600, fontFamily: "system-ui, sans-serif" }}>

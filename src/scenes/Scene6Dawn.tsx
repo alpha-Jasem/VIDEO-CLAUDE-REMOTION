@@ -123,7 +123,7 @@ export const Scene6Dawn: React.FC = () => {
           }}
         >
           <Img
-            src={staticFile("madar-logo-transparent.png")}
+            src={staticFile("madar-mark.png")}
             style={{ width: 92, height: 92, objectFit: "contain" }}
           />
           <div

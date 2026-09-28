@@ -38,7 +38,7 @@ export const MadarAnyBusiness: React.FC = () => {
         <ProblemGrid />
       </Sequence>
       <Sequence from={at.logo} durationInFrames={LOGO}>
-        <Scene2LogoReveal logoSrc="madar-mark.png" />
+        <Scene2LogoReveal />
       </Sequence>
       <Sequence from={at.replies} durationInFrames={REPLY_MONTAGE_DURATION}>
         <ReplyMontage />
